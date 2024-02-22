@@ -1,22 +1,36 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Badge from '../components/Badge.astro';
-import Card from '../components/Card.astro';
+import Layout from "../layouts/Layout.astro";
+import Badge from "../components/Badge.astro";
+import Card from "../components/Card.astro";
 ---
 
-<!-- MINUTO 22:22 -->
-
 <Layout title="Welcome to Astro.">
-	<main>
-		<section class="w-full lg:w-[740px] mx-auto py-44">
-		<h1 class="text-white">Hey, I'm Andrea <Badge>Available for hire</Badge></h1>
-		<h2>Junior Web Developer and English philologist and linguist. 
-			I live in Bilbao (Spain). I create different projects in multilingual settings
-			to improve my programming skills since I am willing to start working in this field.
-		</h2>
+  <main>
+    <section class="w-full lg:w-[740px] mx-auto py-44">
+      <img
+        class="rounded-full w-12 h-12 mb-4"
+        src="../../profile-image.jpg"
+        alt="profile photo"
+      />
+      <h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-4">
+        Hey, I'm Andrea
+        <a
+          href="https://www.linkedin.com/in/andreabr4/"
+          target="_blank"
+          rel="noopener"
+          class="flex justify-center items-center"
+        >
+          <Badge>Available for hire</Badge>
+        </a>
+      </h1>
+      <h2 class="text-xl opacity-80">
+        Junior Web Developer and English philologist and linguist. I live in
+        Bilbao (Spain). I create different projects in multilingual settings to
+        improve my programming skills since I am willing to start working in
+        this field.
+      </h2>
 
-		<ul></ul>
-	</section>
-	</main>
+      <ul></ul>
+    </section>
+  </main>
 </Layout>
-
