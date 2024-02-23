@@ -1,17 +1,21 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Badge from "../components/Badge.astro";
-import SocialInfo from "../components/SocialInfo.astro"
+import SocialInfo from "../components/SocialInfo.astro";
 import LinkedIn from "../components/icons/LinkedIn.astro";
-
+import GitHub from "../components/icons/GitHub.astro";
+import Mail from "../components/icons/Mail.astro";
 import Card from "../components/Card.astro";
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout
+  title="Andrea Bombin - Portfolio | Desarrolladora y Programadora Front-End Web. Traducción y Redacción de contenidos en inglés y español"
+  description="Desarrollo Web y Creación de Contenidos en entornos multilingües. Experiencia en trabajo en equipo, redacción de contenidos, desarrollo de proyectos y uso continuado del inglés como lengua vehicular."
+>
   <main>
     <section class="w-full lg:w-[740px] mx-auto py-44">
       <img
-        class="rounded-full w-12 h-12 mb-4"
+        class="rounded-full size-12 mb-4"
         src="../../profile-image.jpg"
         alt="profile photo"
       />
@@ -36,14 +40,22 @@ import Card from "../components/Card.astro";
         >
       </h2>
 
-      <ul>
-        <li>
-			<SocialInfo>
-				<LinkedIn></LinkedIn>
-			</SocialInfo>
-        
-        </li>
-      </ul>
+      <nav class="flex gap-x-4 mt-8">
+        <SocialInfo href="https://www.linkedin.com/in/andreabr4/">
+          <LinkedIn class="size-6" />
+          LinkedIn
+        </SocialInfo>
+
+        <SocialInfo href="https://github.com/andreabr4">
+          <GitHub class="size-6" />
+          GitHub
+        </SocialInfo>
+
+        <SocialInfo href="https://github.com/andreabr4">
+          <Mail class="size-6" />
+          br13.andrea@gmail.com
+        </SocialInfo>
+      </nav>
     </section>
   </main>
 </Layout>
