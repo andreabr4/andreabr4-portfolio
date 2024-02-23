@@ -1,0 +1,37 @@
+---
+import ProjectsItem from "./ProjectsItem.astro";
+
+const projects = [
+  {
+    date: "February",
+    title: "Lorem ipsum dolor sit",
+    description:
+      "Lorem ipsum dolor sit lorem ipsum dolor sit lorem ipsum dolor sit Lorem ipsum dolor sit lorem ipsum dolor sit lorem ipsum dolor sit",
+    link: "#",
+  },
+  {
+    date: "March",
+    title: "Lorem ipsum dolor sit",
+    description:
+      "Lorem ipsum dolor sit lorem ipsum dolor sit lorem ipsum dolor sit Lorem ipsum dolor sit lorem ipsum dolor sit lorem ipsum dolor sit",
+    link: "#",
+  },
+  {
+    date: "April",
+    title: "Lorem ipsum dolor sit",
+    description:
+      "Lorem ipsum dolor sit lorem ipsum dolor sit lorem ipsum dolor sit Lorem ipsum dolor sit lorem ipsum dolor sit lorem ipsum dolor sit",
+    link: "#",
+  },
+];
+---
+
+<ol class="relative border-s border-gray-200 dark:border-gray-700">
+  {
+    projects.map((project) => (
+      <li class="mb-10 ms-4">
+        <ProjectsItem {...project} />
+      </li>
+    ))
+  }
+</ol>
