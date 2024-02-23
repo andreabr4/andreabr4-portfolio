@@ -5,7 +5,9 @@ import SocialInfo from "../components/SocialInfo.astro";
 import LinkedIn from "../components/icons/LinkedIn.astro";
 import GitHub from "../components/icons/GitHub.astro";
 import Mail from "../components/icons/Mail.astro";
+import Laptop from "../components/icons/Laptop.astro";
 import Projects from "../components/Projects.astro";
+import SectionContainer from "../components/SectionContainer.astro";
 import Card from "../components/Card.astro";
 ---
 
@@ -14,9 +16,9 @@ import Card from "../components/Card.astro";
   description="Desarrollo Web y Creación de Contenidos en entornos multilingües. Experiencia en trabajo en equipo, redacción de contenidos, desarrollo de proyectos y uso continuado del inglés como lengua vehicular."
 >
   <main>
-    <section class="w-full lg:w-[740px] mx-auto py-44">
+    <SectionContainer class="py-44 pb-24">
       <img
-        class="rounded-full size-12 mb-4"
+        class="rounded-full size-20 mb-4"
         src="../../profile-image.jpg"
         alt="profile photo"
       />
@@ -57,10 +59,14 @@ import Card from "../components/Card.astro";
           br13.andrea@gmail.com
         </SocialInfo>
       </nav>
-    </section>
+    </SectionContainer>
 
-    <section>
+    <SectionContainer id="projects">
+      <h2 class="text-2xl font-semibold mb-6 flex gap-x-3 items-center">
+        <Laptop class="size-8" />
+        Latest projects
+      </h2>
       <Projects />
-    </section>
+    </SectionContainer>
   </main>
 </Layout>
