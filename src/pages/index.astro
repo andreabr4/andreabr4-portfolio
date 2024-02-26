@@ -15,14 +15,14 @@ import Card from "../components/Card.astro";
   title="Andrea Bombin - Portfolio | Desarrolladora y Programadora Front-End Web. Traducción y Redacción de contenidos en inglés y español"
   description="Desarrollo Web y Creación de Contenidos en entornos multilingües. Experiencia en trabajo en equipo, redacción de contenidos, desarrollo de proyectos y uso continuado del inglés como lengua vehicular."
 >
-  <main>
-    <SectionContainer class="py-44 pb-24">
+  <main class="px-4">
+    <SectionContainer class="py-44 pb-32">
       <img
         class="rounded-full size-20 mb-4"
         src="../../profile-image.jpg"
         alt="profile photo"
       />
-      <h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-4">
+      <h1 class="text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-4 lg:pb-10">
         Hey, I'm Andrea
         <a
           href="https://www.linkedin.com/in/andreabr4/"
@@ -33,7 +33,7 @@ import Card from "../components/Card.astro";
           <Badge>Available for hire</Badge>
         </a>
       </h1>
-      <h2 class="text-2xl text-wrap">
+      <h2 class="text-xl lg:text-2xl text-wrap max-w-[700px]">
         <span class="text-blue-200"
           >Junior Web Developer and English philologist and linguist. I live in
           Bilbao (Spain).</span
@@ -43,26 +43,26 @@ import Card from "../components/Card.astro";
         >
       </h2>
 
-      <nav class="flex gap-x-4 mt-8">
+      <nav class="flex gap-4 mt-8 flex-wrap">
         <SocialInfo href="https://www.linkedin.com/in/andreabr4/">
-          <LinkedIn class="size-6" />
+          <LinkedIn class="size-4 md:size-6" />
           LinkedIn
         </SocialInfo>
 
         <SocialInfo href="https://github.com/andreabr4">
-          <GitHub class="size-6" />
+          <GitHub class="size-4 md:size-6" />
           GitHub
         </SocialInfo>
 
         <SocialInfo href="mailto:br13.andrea@gmail.com">
-          <Mail class="size-6" />
+          <Mail class="size-4 md:size-6" />
           br13.andrea@gmail.com
         </SocialInfo>
       </nav>
     </SectionContainer>
 
     <SectionContainer id="projects">
-      <h2 class="text-2xl font-semibold mb-6 flex gap-x-3 items-center">
+      <h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
         <Laptop class="size-8" />
         Latest projects
       </h2>
