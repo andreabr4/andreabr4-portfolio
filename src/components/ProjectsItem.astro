@@ -3,7 +3,10 @@ interface Props {
   title: string;
   description: string;
   link?: string;
+  // github: "#";
   date: string;
+  // image: "";
+  // tags: "";
 }
 const { title, description, link, date } = Astro.props;
 ---
@@ -17,8 +20,8 @@ const { title, description, link, date } = Astro.props;
   class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
   >{date}</time
 >
-<h3 class="text-lg font-semibold text-white-60">
-<!-- Esto es mejor en otro color pero hay que pensar cuál-->
+<h3 class="text-lg font-semibold text-white-60 mt-2">
+  <!-- Esto es mejor en otro color pero hay que pensar cuál-->
   {title}
 </h3>
 <p class="mb-4 text-base font-normal text-gray-200 text-pretty">
