@@ -8,7 +8,11 @@ import Mail from "../components/icons/Mail.astro";
 import Laptop from "../components/icons/Laptop.astro";
 import Projects from "../components/Projects.astro";
 import SectionContainer from "../components/SectionContainer.astro";
-import Card from "../components/Card.astro";
+// import { translations } from "./translations";
+import i18next, { t } from "i18next";
+import { Trans, HeadHrefLangs } from "astro-i18next/components";
+
+const lang = "en"
 ---
 
 <Layout
