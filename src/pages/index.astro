@@ -13,6 +13,7 @@ import SectionContainer from "../components/SectionContainer.astro";
 // import { translations } from "./translations";
 import i18next, { t } from "i18next";
 import { Trans, HeadHrefLangs } from "astro-i18next/components";
+import EducationBooks from "../components/icons/EducationBooks.astro";
 
 const lang = "en"
 ---
@@ -81,7 +82,11 @@ const lang = "en"
     </SectionContainer>
 
 	<SectionContainer id="education">
-	<EducationSection></EducationSection>
+    <h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
+      <EducationBooks class="size-8"/>
+      Education
+    </h2>
+	<EducationSection/>
 	</SectionContainer>
   </main>
 </Layout>
