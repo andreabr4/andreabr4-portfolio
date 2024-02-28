@@ -1,20 +1,21 @@
 ---
+import EducationItem from "./EducationItem.astro";
+import University from "../components/icons/University.astro";
 
-
-// const {class: className, id} = Astro.props 
-
-// const cardClass = `card d-flex lg:card-side bg-base-100 shadow-xl ${className}`
+const education = [ 
+  {
+    description: "Lorem ipsum dolor sit",
+  },
+];
 ---
 
-<!-- <div class={cardClass}>
-  <figure class="flex-shrink-0">
-    <img src="https://daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.jpg" alt="Album" />
-  </figure>
-  <div class="card-body ml-4"> 
-    <h2 class="card-title">New album is released!</h2>
-    <p>Click the button to listen on Spotiwhy app.</p>
-    <div class="card-actions justify-end">
-      <button class="btn btn-primary">Listen</button>
-    </div>
-  </div>
-</div> -->
+<ol class="relative border-s border-gray-200 dark:border-gray-700 ml-3">
+  {
+    education.map((course) => (
+      <li>
+        <University />,
+        <EducationItem {...course} />
+      </li>
+    ))
+  }
+</ol>
