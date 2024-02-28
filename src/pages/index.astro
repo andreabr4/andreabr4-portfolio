@@ -6,13 +6,16 @@ import LinkedIn from "../components/icons/LinkedIn.astro";
 import GitHub from "../components/icons/GitHub.astro";
 import Mail from "../components/icons/Mail.astro";
 import Laptop from "../components/icons/Laptop.astro";
+import CV from "../components/icons/CV.astro";
 import Projects from "../components/Projects.astro";
+import EducationSection from "../components/EducationSection.astro";
 import SectionContainer from "../components/SectionContainer.astro";
 // import { translations } from "./translations";
 import i18next, { t } from "i18next";
 import { Trans, HeadHrefLangs } from "astro-i18next/components";
+import EducationBooks from "../components/icons/EducationBooks.astro";
 
-const lang = "en"
+const lang = "en";
 ---
 
 <Layout
@@ -26,7 +29,9 @@ const lang = "en"
         src="../../profile-image.jpg"
         alt="profile photo"
       />
-      <h1 class="text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-4 lg:pb-10">
+      <h1
+        class="text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-4 lg:pb-10"
+      >
         Hey, I'm Andrea
         <a
           href="https://www.linkedin.com/in/andreabr4/"
@@ -62,6 +67,11 @@ const lang = "en"
           <Mail class="size-4 md:size-6" />
           br13.andrea@gmail.com
         </SocialInfo>
+
+        <SocialInfo href="">
+          <CV class="size-4 md:size-6" />
+          CV
+        </SocialInfo>
       </nav>
     </SectionContainer>
 
@@ -71,6 +81,14 @@ const lang = "en"
         Latest projects
       </h2>
       <Projects />
+    </SectionContainer>
+
+    <SectionContainer id="education">
+      <h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
+        <EducationBooks class="size-8" />
+        Education
+      </h2>
+      <EducationSection />
     </SectionContainer>
   </main>
 </Layout>

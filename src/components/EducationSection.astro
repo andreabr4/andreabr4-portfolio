@@ -1,0 +1,37 @@
+---
+import University from "../components/icons/University.astro";
+import Code from "../components/icons/Code.astro";
+
+const { class: className, id, customComponent, children } = Astro.props;
+
+const cardClass = `card flex lg:card-side bg-base-100 custom-shadow shadow-xl mb-4 mt-2 ${className}`;
+---
+
+<!-- <style>
+  .custom-shadow {
+    box-shadow:
+      0 4px 6px -1px rgba(255, 255, 255, 0.5),
+      0 2px 4px -1px rgba(255, 255, 255, 0.25);
+  }
+</style> -->
+
+<div class={cardClass}>
+  <figure class="size-12">
+    <Code />
+  </figure>
+  <div class="card-body ml-6 mt-2">
+    <p>Bootcamp Full-Stack Code4Jobs (2023)</p>
+  </div>
+</div>
+
+<div class={cardClass}>
+  <figure class="size-12">
+    <University />
+  </figure>
+  <div class="card-body ml-6">
+    <p>
+      Grado universitario en Lenguas Modernas con Mención en Estudios Ingleses (2016-2020)
+    </p>
+    <p>Máster universitario en Lingüística Inglesa Aplicada (2022-2024)</p>
+  </div>
+</div>
