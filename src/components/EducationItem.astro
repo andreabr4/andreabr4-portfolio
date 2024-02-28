@@ -1,0 +1,18 @@
+---
+const { class: className, id, customComponent, children} = Astro.props;
+
+const cardClass = `card flex lg:card-side bg-base-100 shadow-xl ${className}`;
+---
+
+<div class={cardClass}>
+  <!-- <figure class="size-20"> -->
+    <!-- {customComponent || children} -->
+  <!-- </figure> -->
+  <div class="card-body ml-6">
+    <p>
+      Grado universitario en Lenguas Modernas con Mención en Estudios Ingleses
+    </p>
+    <p>Máster universitario en Lingüística Inglesa Aplicada</p>
+  </div>
+</div>
+
