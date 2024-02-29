@@ -1,5 +1,6 @@
 ---
 import i18next, { t } from 'i18next';
+import LanguageSelection from "../components/LanguageSelection.astro";
 ---
 <header
   class="flex justify-between items-center py-5 w-full xl:w-[1120px] mx-auto"
@@ -11,6 +12,8 @@ import i18next, { t } from 'i18next';
     alt="profile photo"
   />
   <nav class="flex flex-row gap-x-10 opacity-80">
+
+    <LanguageSelection/>
 
     <a href="#about-me">{t('nav.about')}</a>
     <a href="#skills">{t("nav.skills")}</a>
