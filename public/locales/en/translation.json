@@ -1,9 +1,17 @@
 {
-    "nav.about": "About me",
-    "nav.skills": "Skills",
-    "nav.projects": "Projects",
-    "nav.education": "Education",
-    "nav.contact": "Contact", 
+  "nav.about": "About me",
+  "nav.skills": "Skills",
+  "nav.projects": "Projects",
+  "nav.education": "Education",
+  "nav.contact": "Contact",
 
-    "project.date": "November 2023"
+  "project1.date": "January 2024",
+  "project1.title": "Worköholics-Technical Test",
+  "project1.description": "This project consisted of reproducing a template provided by the company Worköholics. This test included the creation of landing page. To make it more elaborated, I decided to add animations and implement best practices (such as using viewports instead of pixels for images or employing semantic HTML for better code comprehension). Thanks to this project, I learned how to use new technologies like Sass or Framer Motion.",
+  "project2.date": "November 2023",
+  "project2.title": "RowONE",
+  "project2.description": "RowONE is a concert ticket sales website translated into both Spanish and English using i18next as a language-switching tool. This page is built using React, NestJS, and TailwindCSS. Additionally, it incorporates JWT for login validation (if you don't have an account and log in, it doesn't allow ticket purchases) and Resend to send tickets to the email (although in its free version, it only allows one email address, so it cannot be executed from other accounts). Finally, RowONE utilizes Stripe to simulate a payment gateway before ticket delivery and Swagger to obtain website documentation and perform various actions.",
+  "project3.date": "October 2023",
+  "project3.title": "PlanCraft",
+  "project3.description": ""
 }

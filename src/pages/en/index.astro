@@ -1,12 +1,7 @@
 ---
 import Layout from "../../layouts/Layout.astro";
-import Badge from "../../components/Badge.astro";
-import SocialInfo from "../../components/SocialInfo.astro";
-import LinkedIn from "../../components/icons/LinkedIn.astro";
-import GitHub from "../../components/icons/GitHub.astro";
-import Mail from "../../components/icons/Mail.astro";
+import PersonalInfo from "../../components/PersonalInfo.astro";
 import Laptop from "../../components/icons/Laptop.astro";
-import CV from "../../components/icons/CV.astro";
 import Projects from "../../components/Projects.astro";
 import ImageCarrousel from "../../components/ImageCarrousel.astro";
 import EducationSection from "../../components/EducationSection.astro";
@@ -24,58 +19,10 @@ changeLanguage("en");
 >
   <main class="px-4">
     <SectionContainer class="py-44 pb-32" id="about-me">
-      <img
-        class="rounded-full size-20 mb-4"
-        src="../../profile-image.jpg"
-        alt="profile photo"
-      />
-      <h1
-        class="text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-4 lg:pb-10"
-      >
-        Hey, I'm Andrea
-        <a
-          href="https://www.linkedin.com/in/andreabr4/"
-          target="_blank"
-          rel="noopener"
-          class="flex justify-center items-center"
-        >
-          <Badge>Available for hire</Badge>
-        </a>
-      </h1>
-      <h2 class="text-xl lg:text-2xl text-wrap max-w-[700px]">
-        <span class="text-blue-200"
-          >Junior Web Developer and English philologist and linguist. I live in
-          Bilbao (Spain).</span
-        ><span class="text-white-100/90">
-          I create different projects in multilingual settings to improve my
-          programming skills since I am willing to start working in this field.</span
-        >
-      </h2>
-
-      <nav class="flex gap-4 mt-8 flex-wrap">
-        <SocialInfo href="https://www.linkedin.com/in/andreabr4/">
-          <LinkedIn class="size-4 md:size-6" />
-          LinkedIn
-        </SocialInfo>
-
-        <SocialInfo href="https://github.com/andreabr4">
-          <GitHub class="size-4 md:size-6" />
-          GitHub
-        </SocialInfo>
-
-        <SocialInfo href="mailto:br13.andrea@gmail.com">
-          <Mail class="size-4 md:size-6" />
-          br13.andrea@gmail.com
-        </SocialInfo>
-
-        <SocialInfo href="">
-          <CV class="size-4 md:size-6" />
-          CV
-        </SocialInfo>
-      </nav>
+     <PersonalInfo/>
     </SectionContainer>
 
-    <ImageCarrousel/>
+    <!-- <ImageCarrousel/> -->
 
     <SectionContainer id="projects">
       <h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
