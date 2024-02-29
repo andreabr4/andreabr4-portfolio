@@ -5,7 +5,7 @@ import Code from "../components/icons/Code.astro";
 
 const { class: className, id, customComponent, children } = Astro.props;
 
-const cardClass = `card flex lg:card-side bg-base-100 custom-shadow shadow-xl mb-4 mt-2 ${className}`;
+const cardClass = `card flex w-full lg:w-[780px] lg:card-side bg-base-100 custom-shadow shadow-xl mb-4 mt-2 ${className}`;
 ---
 
 <!-- <style>
@@ -15,7 +15,6 @@ const cardClass = `card flex lg:card-side bg-base-100 custom-shadow shadow-xl mb
       0 2px 4px -1px rgba(255, 255, 255, 0.25);
   }
 </style> -->
-
 <div class={cardClass}>
   <figure class="size-12">
     <Code />
@@ -23,7 +22,7 @@ const cardClass = `card flex lg:card-side bg-base-100 custom-shadow shadow-xl mb
   <div class="card-body ml-6 mt-2">
     <p>Bootcamp Full-Stack Code4Jobs</p>
   </div>
-  <Date educationYear="2023"/>
+  <Date educationYear="2023" />
 </div>
 
 <div class={cardClass}>
@@ -31,9 +30,13 @@ const cardClass = `card flex lg:card-side bg-base-100 custom-shadow shadow-xl mb
     <University />
   </figure>
   <div class="card-body ml-6">
-    <p>
-      Grado universitario en Lenguas Modernas con Mención en Estudios Ingleses (2016-2020)
+    <p class="flex-wrap text-pretty mb-5">
+      Grado universitario en Lenguas Modernas con Mención en Estudios Ingleses
+      <Date educationYear="2016-2020" />
     </p>
-    <p>Máster universitario en Lingüística Inglesa Aplicada (2022-2024)</p>
+    <p class="flex-wrap text-pretty">
+      Máster universitario en Lingüística Inglesa Aplicada
+      <Date educationYear="2022-2024" />
+    </p>
   </div>
 </div>
