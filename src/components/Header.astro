@@ -1,3 +1,7 @@
+---
+import i18next, { t } from 'i18next';
+import LanguageSelection from "../components/LanguageSelection.astro";
+---
 <header
   class="flex justify-between items-center py-5 w-full xl:w-[1120px] mx-auto"
 >
@@ -8,8 +12,13 @@
     alt="profile photo"
   />
   <nav class="flex flex-row gap-x-10 opacity-80">
-    <a href="#about-me">About me</a>
-    <a href="#skills">Skills</a>
+
+    <LanguageSelection/>
+
+    <a href="#about-me">{t('nav.about')}</a>
+    <a href="#skills">{t("nav.skills")}</a>
+    <!-- <a href="#about-me">About me</a>
+    <a href="#skills">Skills</a> -->
     <a href="#projects">Projects</a>
     <a href="#education">Education</a>
     <a href="#contact">Contact</a>
