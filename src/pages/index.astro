@@ -11,8 +11,10 @@ import Projects from "../components/Projects.astro";
 import EducationSection from "../components/EducationSection.astro";
 import SectionContainer from "../components/SectionContainer.astro";
 // import { translations } from "./translations";
-import i18next, { t } from "i18next";
+import i18next, { t, changeLanguage } from "i18next";
 import EducationBooks from "../components/icons/EducationBooks.astro";
+
+changeLanguage("es");
 ---
 
 <Layout
