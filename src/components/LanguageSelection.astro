@@ -1,0 +1,25 @@
+---
+import i18next, { t } from 'i18next';
+
+const changeLanguage = (language) => {
+  i18n.changeLanguage(language);
+};
+---
+<!-- AQUI DEBERIA PONER UN HREF AL ENDPOINT -->
+<div className="flex space-x-2">
+    <button 
+      onClick={() => changeLanguage('en')}
+      className="btn btn-square btn-xs btn-outline btn-primary"
+    >
+      EN
+    </button>
+    <button 
+      onClick={() => changeLanguage('es')}
+      className="btn btn-square btn-xs btn-outline btn-primary ml-5 mr-7"
+    >
+    ES
+    </button>
+  </div>
+
+
+  

@@ -1,0 +1,26 @@
+---
+const { educationYear = "" } = Astro.props;
+---
+
+<span
+  class="bg-gray-100 text-gray-800 text-xs font-medium inline-flex items-center px-1.5 py-0.25 h-5 mt-2 ml-5 rounded me-4 bg-gray-300 text-gray-500 border border-gray-500"
+>
+
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    class="icon icon-tabler icon-tabler-calendar-check"
+    width="15"
+    height="15"
+    viewBox="0 0 24 24"
+    stroke-width="1.5"
+    stroke="currentColor"
+    fill="none"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
+      d="M11.5 21h-5.5a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v6"
+    ></path><path d="M16 3v4"></path><path d="M8 3v4"></path><path d="M4 11h16"
+    ></path><path d="M15 19l2 2l4 -4"></path></svg
+  >
+  {educationYear}
+</span>
