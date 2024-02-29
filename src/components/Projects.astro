@@ -1,27 +1,29 @@
 ---
 import ProjectsItem from "./ProjectsItem.astro";
+import i18next, { t } from 'i18next';
 
 const projects = [
- { 
- date: "April AQUI LO MÁS NUEVO",
- title: "Lorem ipsum dolor sit",
-   description:
-      "Lorem ipsum dolor sit lorem ipsum dolor sit lorem ipsum dolor sit Lorem ipsum dolor sit lorem ipsum dolor sit lorem ipsum dolor sit",
-   link: "#",
- },
-  {     date: "March",
+  {
+    date: t('project.date'),
     title: "Lorem ipsum dolor sit",
     description:
       "Lorem ipsum dolor sit lorem ipsum dolor sit lorem ipsum dolor sit Lorem ipsum dolor sit lorem ipsum dolor sit lorem ipsum dolor sit",
     link: "#",
   },
-  { 
+  {
+    date: "March",
+    title: "Lorem ipsum dolor sit",
+    description:
+      "Lorem ipsum dolor sit lorem ipsum dolor sit lorem ipsum dolor sit Lorem ipsum dolor sit lorem ipsum dolor sit lorem ipsum dolor sit",
+    link: "#",
+  },
+  {
     date: "February",
     title: "Lorem ipsum dolor sit",
     description:
       "Lorem ipsum dolor sit lorem ipsum dolor sit lorem ipsum dolor sit Lorem ipsum dolor sit lorem ipsum dolor sit lorem ipsum dolor sit",
-  link: "#",
-},
+    link: "#",
+  },
 ];
 ---
 
@@ -33,4 +35,4 @@ const projects = [
       </li>
     ))
   }
-</ol> 
+</ol>
