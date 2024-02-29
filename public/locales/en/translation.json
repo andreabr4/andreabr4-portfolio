@@ -3,5 +3,7 @@
     "nav.skills": "Skills",
     "nav.projects": "Projects",
     "nav.education": "Education",
-    "nav.contact": "Contact"
+    "nav.contact": "Contact", 
+
+    "project.date": "November 2023"
 }
