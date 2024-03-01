@@ -1,9 +1,11 @@
 ---
 import { LanguageSelector } from "astro-i18next/components";
-const languageSwitcher = `bg-black/90 text-base text-white`;
+import DarkBadge from "../components/DarkBadge.astro";
+const languageSwitcher = `bg-transparent rounded border-none px-3 text-gray/80`;
 ---
 
-<LanguageSelector showFlag={false} class={languageSwitcher}/>
+  <LanguageSelector showFlag={false} class={languageSwitcher}/>
+
 
 
   
