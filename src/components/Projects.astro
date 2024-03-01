@@ -1,27 +1,24 @@
 ---
 import ProjectsItem from "./ProjectsItem.astro";
-import i18next, { t } from 'i18next';
+import i18next, { t } from "i18next";
 
 const projects = [
   {
-    date: t('project.date'),
-    title: "Lorem ipsum dolor sit",
-    description:
-      "Lorem ipsum dolor sit lorem ipsum dolor sit lorem ipsum dolor sit Lorem ipsum dolor sit lorem ipsum dolor sit lorem ipsum dolor sit",
+    date: t("project1.date"),
+    title: t("project1.title"),
+    description: t("project1.description"),
     link: "#",
   },
   {
-    date: "March",
-    title: "Lorem ipsum dolor sit",
-    description:
-      "Lorem ipsum dolor sit lorem ipsum dolor sit lorem ipsum dolor sit Lorem ipsum dolor sit lorem ipsum dolor sit lorem ipsum dolor sit",
+    date: t("project2.date"),
+    title: t("project2.title"),
+    description: t("project2.description"),
     link: "#",
   },
   {
-    date: "February",
-    title: "Lorem ipsum dolor sit",
-    description:
-      "Lorem ipsum dolor sit lorem ipsum dolor sit lorem ipsum dolor sit Lorem ipsum dolor sit lorem ipsum dolor sit lorem ipsum dolor sit",
+    date: t("project3.date"),
+    title: t("project3.title"),
+    description: t("project3.description"),
     link: "#",
   },
 ];
