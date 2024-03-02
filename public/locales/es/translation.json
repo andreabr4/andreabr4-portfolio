@@ -12,6 +12,6 @@
   "project2.title": "RowONE",
   "project2.description": "RowONE es una web de venta de tickets para conciertos traducida tanto a español como a inglés usando i18next como herramienta para el cambio de idioma. Esta página está creada usando React, NestJS y TailwindCSS. Además, incluye JWT para la validación de inicios de sesión (si no tienes una cuenta e inicias sesión, no te permite comprar entradas) y Resend para enviar las entradas al correo electrónico (aunque en su versión gratuita sólo permite incluir una única dirección de correo por lo que no es posible ejecutarlo desde otras cuentas). Finalmente, RowONE usa Stripe para simular una pasarela de pago previa al envío de las entradas y Swagger para poder obtener la documentación de la web y ejecutar diferentes acciones.",
   "project3.date": "Octubre 2023",
-  "project3.title": "PlanCraft",
+  "project3.title": "ChronosCraft",
   "project3.description": ""
 }
