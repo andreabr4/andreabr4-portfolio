@@ -10,5 +10,9 @@ export default defineConfig({
     astroI18next()
   ],
   output: 'server',
-  adapter: vercel(),
+  adapter: vercel(
+    {
+      includeFiles: ["./public/locales/en/translation.json", "./public/locales/es/translation.json"],
+    }
+  ),
 });
