@@ -1,3 +1,4 @@
+/** @type {import('astro-i18next').AstroI18nextConfig} */
 import en from "./public/locales/en/translation.json" assert {type: "json"};
 import es from "./public/locales/es/translation.json" assert {type: "json"};
 
