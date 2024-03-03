@@ -1,6 +1,4 @@
 ---
-import Tags from "../components/Tags.astro";
-
 interface Props {
   title: string;
   description: string;
@@ -8,7 +6,13 @@ interface Props {
   github?: string;
   date: string;
   image: any;
-  tags: string[];
+  tags: ProjectTechnologies[];
+}
+
+interface ProjectTechnologies {
+  class:string;
+  icon: any;
+  name:string;
 }
 const { title, description, link, date, github, image, tags } = Astro.props;
 ---
@@ -30,17 +34,22 @@ const { title, description, link, date, github, image, tags } = Astro.props;
   {description}
 </p>
 
-<div class="items-center inline-flex">
+
   
 <ul class="flex list-none pl-4">
   {tags.map((tag) => (
     <li class="me-2">
-      <Tags tag={tag} />
+      <span
+                class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2 `}
+              >
+                <tag.icon class="size-4" />
+                {tag.name}
+              </span>
     </li>
   ))}
 </ul>
 
-
+<div class="items-center inline-flex"></div>
 {
   link && (
     <a
