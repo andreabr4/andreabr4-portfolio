@@ -1,6 +1,7 @@
 ---
 import ProjectsItem from "./ProjectsItem.astro";
 import i18next, { t } from "i18next";
+import AstroIcon from "./icons/AstroIcon.astro";
 import ReactIcon from "./icons/ReactIcon.astro";
 import TailwindCSSIcon from "./icons/TailwindCSSIcon.astro";
 import HTMLIcon from "./icons/HTMLIcon.astro";
@@ -19,10 +20,45 @@ import JWTIcon from "./icons/JWTIcon.astro";
 import I18NextIcon from "./icons/I18NextIcon.astro";
 
 const projects = [
+{
+    date: t("project4.date"),
+    title: t("project4.title"),
+    description: t("project4.description"),
+    tags: [
+    {
+        icon: AstroIcon,
+        class: "",
+        name: "Astro",
+      },
+      {
+        icon: HTMLIcon,
+        class: "",
+        name: "HTML",
+      },
+      {
+        icon: TypeScriptIcon,
+        class: "",
+        name: "TypeScript",
+      },
+      {
+        icon: TailwindCSSIcon,
+        class: "",
+        name: "TailwindCSS",
+      },
+      {
+        icon: I18NextIcon,
+        class: "",
+        name: "i18Next",
+      },
+    ],
+    link: "",
+    github: "https://github.com/andreabr4/andreabr4-portfolio",
+    image: "",
+  },
   {
-    date: t("project1.date"),
-    title: t("project1.title"),
-    description: t("project1.description"),
+    date: t("project3.date"),
+    title: t("project3.title"),
+    description: t("project3.description"),
     tags: [
       {
         icon: ReactIcon,
@@ -135,9 +171,9 @@ const projects = [
     ],
   },
   {
-    date: t("project3.date"),
-    title: t("project3.title"),
-    description: t("project3.description"),
+    date: t("project1.date"),
+    title: t("project1.title"),
+    description: t("project1.description"),
     link: "#",
     github: "https://github.com/andreabr4/plan-craft-project",
     image: "",

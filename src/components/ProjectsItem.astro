@@ -36,14 +36,14 @@ const { title, description, link, date, github, image, tags } = Astro.props;
 
 
   
-<ul class="flex list-none pl-4">
+<ul class="flex flex-wrap list-none">
   {tags.map((tag) => (
     <li class="me-2">
       <span
                 class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2 `}
               >
                 <tag.icon class="size-4" />
-                {tag.name}
+                <span class="mt-1">{tag.name}</span>
               </span>
     </li>
   ))}
