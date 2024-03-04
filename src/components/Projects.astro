@@ -1,27 +1,215 @@
 ---
 import ProjectsItem from "./ProjectsItem.astro";
+import i18next, { t } from "i18next";
+import AstroIcon from "./icons/AstroIcon.astro";
+import ReactIcon from "./icons/ReactIcon.astro";
+import TailwindCSSIcon from "./icons/TailwindCSSIcon.astro";
+import HTMLIcon from "./icons/HTMLIcon.astro";
+import BootstrapIcon from "./icons/BootstrapIcon.astro";
+import FramerIcon from "./icons/FramerIcon.astro";
+import FigmaIcon from "./icons/FigmaIcon.astro";
+import SassIcon from "./icons/SassIcon.astro";
+import TypeScriptIcon from "./icons/TypeScriptIcon.astro";
+import NestIcon from "./icons/NestIcon.astro";
+import MongoDBIcon from "./icons/MongoDBIcon.astro";
+import JavaScriptIcon from "./icons/JavaScriptIcon.astro";
+import CSSIcon from "./icons/CSSIcon.astro";
+import StripeIcon from "./icons/StripeIcon.astro";
+import SwaggerIcon from "./icons/SwaggerIcon.astro";
+import JWTIcon from "./icons/JWTIcon.astro";
+import I18NextIcon from "./icons/I18NextIcon.astro";
 
 const projects = [
- { 
- date: "April AQUI LO MÁS NUEVO",
- title: "Lorem ipsum dolor sit",
-   description:
-      "Lorem ipsum dolor sit lorem ipsum dolor sit lorem ipsum dolor sit Lorem ipsum dolor sit lorem ipsum dolor sit lorem ipsum dolor sit",
-   link: "#",
- },
-  {     date: "March",
-    title: "Lorem ipsum dolor sit",
-    description:
-      "Lorem ipsum dolor sit lorem ipsum dolor sit lorem ipsum dolor sit Lorem ipsum dolor sit lorem ipsum dolor sit lorem ipsum dolor sit",
-    link: "#",
+  {
+    date: t("project4.date"),
+    title: t("project4.title"),
+    description: t("project4.description"),
+    tags: [
+      {
+        icon: AstroIcon,
+        class: "",
+        name: "Astro",
+      },
+      {
+        icon: HTMLIcon,
+        class: "",
+        name: "HTML",
+      },
+      {
+        icon: TypeScriptIcon,
+        class: "",
+        name: "TypeScript",
+      },
+      {
+        icon: TailwindCSSIcon,
+        class: "",
+        name: "TailwindCSS",
+      },
+      {
+        icon: I18NextIcon,
+        class: "",
+        name: "i18Next",
+      },
+    ],
+    link: "",
+    github: "https://github.com/andreabr4/andreabr4-portfolio",
+    image: "",
   },
-  { 
-    date: "February",
-    title: "Lorem ipsum dolor sit",
-    description:
-      "Lorem ipsum dolor sit lorem ipsum dolor sit lorem ipsum dolor sit Lorem ipsum dolor sit lorem ipsum dolor sit lorem ipsum dolor sit",
-  link: "#",
-},
+  {
+    date: t("project3.date"),
+    title: t("project3.title"),
+    description: t("project3.description"),
+    tags: [
+      {
+        icon: ReactIcon,
+        class: "",
+        name: "React",
+      },
+      {
+        icon: HTMLIcon,
+        class: "",
+        name: "HTML",
+      },
+      {
+        icon: BootstrapIcon,
+        class: "",
+        name: "Bootstrap",
+      },
+      {
+        icon: FramerIcon,
+        class: "",
+        name: "Framer Motion",
+      },
+      {
+        icon: SassIcon,
+        class: "",
+        name: "Sass",
+      },
+      {
+        icon: TypeScriptIcon,
+        class: "",
+        name: "TypeScript",
+      },
+      {
+        icon: FigmaIcon,
+        class: "",
+        name: "Figma",
+      },
+    ],
+    link: "https://prueba-workoholics.vercel.app/",
+    github: "https://github.com/andreabr4/prueba_workoholics",
+    image: "../../prueba-worko-mockup1.jpg",
+  },
+  {
+    date: t("project2.date"),
+    title: t("project2.title"),
+    description: t("project2.description"),
+    tags: [
+      {
+        icon: ReactIcon,
+        class: "",
+        name: "React",
+      },
+      {
+        icon: NestIcon,
+        class: "",
+        name: "NestJS",
+      },
+      {
+        icon: TailwindCSSIcon,
+        class: "",
+        name: "TailwindCSS",
+      },
+      {
+        icon: JavaScriptIcon,
+        class: "",
+        name: "JavaScript",
+      },
+      {
+        icon: HTMLIcon,
+        class: "",
+        name: "HTML",
+      },
+      {
+        icon: CSSIcon,
+        class: "",
+        name: "CSS",
+      },
+      {
+        icon: StripeIcon,
+        class: "",
+        name: "Stripe",
+      },
+      {
+        icon: SwaggerIcon,
+        class: "",
+        name: "Swagger",
+      },
+      {
+        icon: JWTIcon,
+        class: "",
+        name: "JWT",
+      },
+      {
+        icon: TypeScriptIcon,
+        class: "",
+        name: "TypeScript",
+      },
+      {
+        icon: I18NextIcon,
+        class: "",
+        name: "i18Next",
+      },
+      {
+        icon: MongoDBIcon,
+        class: "",
+        name: "MongoDB",
+      },
+    ],
+    link: "https://cool-klepon-45dc29.netlify.app/",
+    github: "",
+    image: "../../RowONE-mockup.jpg",
+  },
+  {
+    date: t("project1.date"),
+    title: t("project1.title"),
+    description: t("project1.description"),
+    tags: [
+      {
+        icon: NestIcon,
+        class: "",
+        name: "NestJS",
+      },
+      {
+        icon: TypeScriptIcon,
+        class: "",
+        name: "TypeScript",
+      },
+      {
+        icon: CSSIcon,
+        class: "",
+        name: "CSS",
+      },
+      {
+        icon: JavaScriptIcon,
+        class: "",
+        name: "JavaScript",
+      },
+      {
+        icon: HTMLIcon,
+        class: "",
+        name: "HTML",
+      },
+      {
+        icon: MongoDBIcon,
+        class: "",
+        name: "MongoDB",
+      },
+    ],
+    link: "#",
+    github: "https://github.com/andreabr4/plan-craft-project",
+    image: "../../ChronosCraft-mockup.jpg",
+  },
 ];
 ---
 
@@ -33,4 +221,4 @@ const projects = [
       </li>
     ))
   }
-</ol> 
+</ol>
