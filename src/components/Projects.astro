@@ -1,6 +1,7 @@
 ---
 import ProjectsItem from "./ProjectsItem.astro";
 import i18next, { t } from "i18next";
+import AstroIcon from "./icons/AstroIcon.astro";
 import ReactIcon from "./icons/ReactIcon.astro";
 import TailwindCSSIcon from "./icons/TailwindCSSIcon.astro";
 import HTMLIcon from "./icons/HTMLIcon.astro";
@@ -20,9 +21,44 @@ import I18NextIcon from "./icons/I18NextIcon.astro";
 
 const projects = [
   {
-    date: t("project1.date"),
-    title: t("project1.title"),
-    description: t("project1.description"),
+    date: t("project4.date"),
+    title: t("project4.title"),
+    description: t("project4.description"),
+    tags: [
+      {
+        icon: AstroIcon,
+        class: "",
+        name: "Astro",
+      },
+      {
+        icon: HTMLIcon,
+        class: "",
+        name: "HTML",
+      },
+      {
+        icon: TypeScriptIcon,
+        class: "",
+        name: "TypeScript",
+      },
+      {
+        icon: TailwindCSSIcon,
+        class: "",
+        name: "TailwindCSS",
+      },
+      {
+        icon: I18NextIcon,
+        class: "",
+        name: "i18Next",
+      },
+    ],
+    link: "",
+    github: "https://github.com/andreabr4/andreabr4-portfolio",
+    image: "",
+  },
+  {
+    date: t("project3.date"),
+    title: t("project3.title"),
+    description: t("project3.description"),
     tags: [
       {
         icon: ReactIcon,
@@ -60,17 +96,14 @@ const projects = [
         name: "Figma",
       },
     ],
-    link: "#",
+    link: "https://prueba-workoholics.vercel.app/",
     github: "https://github.com/andreabr4/prueba_workoholics",
-    image: "../../prueba-worko.png",
+    image: "../../prueba-worko-mockup1.jpg",
   },
   {
     date: t("project2.date"),
     title: t("project2.title"),
     description: t("project2.description"),
-    link: "#",
-    github: "",
-    image: "",
     tags: [
       {
         icon: ReactIcon,
@@ -133,11 +166,14 @@ const projects = [
         name: "MongoDB",
       },
     ],
+    link: "https://cool-klepon-45dc29.netlify.app/",
+    github: "",
+    image: "../../RowONE-mockup.jpg",
   },
   {
-    date: t("project3.date"),
-    title: t("project3.title"),
-    description: t("project3.description"),
+    date: t("project1.date"),
+    title: t("project1.title"),
+    description: t("project1.description"),
     link: "#",
     github: "https://github.com/andreabr4/plan-craft-project",
     image: "",
@@ -172,7 +208,6 @@ const projects = [
         class: "",
         name: "MongoDB",
       },
-
     ],
   },
 ];
