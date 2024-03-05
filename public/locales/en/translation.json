@@ -5,6 +5,11 @@
   "nav.education": "Education",
   "nav.contact": "Contact",
 
+  "personal.name":"Hey, I'm Andrea!",
+  "personal.badge":"Available for hire",
+  "personal.description.colored":"Junior Web Developer and English philologist and linguist. I live in Bilbao (Spain).",
+  "personal.description":"I create different projects in multilingual settings to improve my programming skills since I am willing to start working in this field.",
+  
   "project4.date": "February-March 2024", 
   "project4.title": "Personal Portfolio", 
   "project4.description": "In this portfolio, I have included the most relevant projects that I have completed so far. This project is constructed using Astro and will be in constant evolution since I want to continue facing more challenges to learn and develop my programming skills.",
