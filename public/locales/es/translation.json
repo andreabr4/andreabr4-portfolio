@@ -5,6 +5,11 @@
   "nav.education": "Educación",
   "nav.contact": "Contacto",
 
+  "personal.name":"¡Hola, soy Andrea!",
+  "personal.badge":"Disponible para trabajar",
+  "personal.description.colored":"Programadora junior, filóloga y lingüista inglesa. Me encanta el desarrollo Frontend y el Diseño UI/UX.",
+  "personal.description":"Creo proyectos multilingües para mejorar mis habilidades de programación ya que tengo gran curiosidad y ganas de aprender nuevas tecnologías. Vivo en Bilbao.",
+ 
   "project4.date": "Febrero-Marzo 2024", 
   "project4.title": "Portfolio personal", 
   "project4.description": "En este portfolio, he incluido los proyectos más relevantes que he completado a día de hoy. Está construido usando Astro y será un proyecto en constante evolución ya que quiero continuar desarrollando nuevos desafíos para seguir aprendiendo y mejorando mis habilidades de programación.",

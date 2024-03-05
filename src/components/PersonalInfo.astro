@@ -5,6 +5,7 @@ import LinkedIn from "../components/icons/LinkedIn.astro";
 import GitHub from "../components/icons/GitHub.astro";
 import Mail from "../components/icons/Mail.astro";
 import CV from "../components/icons/CV.astro";
+import i18next, { t } from "i18next";
 ---
 
 <img
@@ -15,23 +16,21 @@ import CV from "../components/icons/CV.astro";
 <h1
   class="text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-4 lg:pb-10"
 >
-  Hey, I'm Andrea
+  {t("personal.name")}
   <a
     href="https://www.linkedin.com/in/andreabr4/"
     target="_blank"
     rel="noopener"
     class="flex justify-center items-center"
   >
-    <Badge>Available for hire</Badge>
+    <Badge>{t("personal.badge")}</Badge>
   </a>
 </h1>
 <h2 class="text-xl lg:text-2xl text-wrap max-w-[700px]">
-  <span class="text-blue-200"
-    >Junior Web Developer and English philologist and linguist. I live in Bilbao
-    (Spain).</span
-  ><span class="text-white-100/90">
-    I create different projects in multilingual settings to improve my
-    programming skills since I am willing to start working in this field.</span
+  <span class="text-blue-500"> {t("personal.description.colored")}</span><span
+    class="text-white-100/90"
+  >
+    {t("personal.description")}</span
   >
 </h2>
 
