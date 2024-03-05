@@ -5,10 +5,11 @@ import i18next, { t } from "i18next";
 
 <footer class="dark:bg-[#474555] w-screen">
   <div class="p-4 py-6 lg:py-8">
-    <div class="md:flex md:justify-between">
-      <div class="mb-6 md:mb-0"></div>
-      <div class="grid grid-cols-4 gap-8 sm:gap-6 sm:grid-cols-3">
-        <div>
+    <div class="lg:flex lg:justify-between">
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-6 col-span-2 w-full"
+      >
+        <div class="md:ml-8">
           <h2 class="mb-6 text-sm font-semibold uppercase text-white">
             {t("language.selection")}
           </h2>
@@ -19,11 +20,10 @@ import i18next, { t } from "i18next";
           </ul>
         </div>
 
-        <div>
+        <div class="md:mx-auto">
           <h2 class="mb-6 text-sm font-semibold uppercase text-white">
             {t("footer.contact")}
           </h2>
-
           <ul class="text-gray-400 font-medium">
             <li class="mb-4">
               <a href="mailto:br13.andrea@gmail.com" class="hover:underline">
@@ -31,8 +31,11 @@ import i18next, { t } from "i18next";
               >
             </li>
             <li>
-              <a href="https://www.linkedin.com/in/andreabr4/" class="hover:underline" target="_blank"
-                >LinkedIn</a
+              <a
+                href="https://www.linkedin.com/in/andreabr4/"
+                class="hover:underline"
+              >
+                LinkedIn</a
               >
             </li>
           </ul>
@@ -40,6 +43,8 @@ import i18next, { t } from "i18next";
       </div>
     </div>
 
-    <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+    <hr
+      class="flex justify-center my-6 border-gray-200 dark:border-gray-700 lg:my-8 w-full"
+    />
   </div>
 </footer>
