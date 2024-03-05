@@ -1,7 +1,7 @@
 import { defineConfig } from 'astro/config';
 import astroI18next from "astro-i18next";
 import tailwind from "@astrojs/tailwind";
-import vercelStatic from '@astrojs/vercel/static';
+import vercel from '@astrojs/vercel/serverless';
 
 // https://astro.build/config
 export default defineConfig({
@@ -9,6 +9,10 @@ export default defineConfig({
     tailwind(),
     astroI18next()
   ],
-  output: 'static',
-  adapter: vercelStatic(),
+  output: 'server',
+  adapter: vercel(
+    {
+      includeFiles: ["./public/locales/en/translation.json", "./public/locales/es/translation.json"],
+    }
+  ),
 });
