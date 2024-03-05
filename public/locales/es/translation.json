@@ -5,13 +5,20 @@
   "nav.education": "Educación",
   "nav.contact": "Contacto",
 
-  "project1.date": "Enero 2024",
-  "project1.title": "Prueba técnica de Worköholics",
-  "project1.description": "Este proyecto consistió en reproducir una plantilla enviada por la empresa Worköholics. Esta prueba incluía una landing page a la que decidí introducir animaciones y usar buenas prácticas (como puede ser el uso de viewports en vez de píxeles para las imágenes o usar HTML semántico para una mejor comprensión del código). Gracias a este proyecto aprendí a usar nuevas tecnologías como Sass o Framer Motion.",
+  "project4.date": "Febrero-Marzo 2024", 
+  "project4.title": "Portfolio personal", 
+  "project4.description": "En este portfolio, he incluido los proyectos más relevantes que he completado a día de hoy. Está construido usando Astro y será un proyecto en constante evolución ya que quiero continuar desarrollando nuevos desafíos para seguir aprendiendo y mejorando mis habilidades de programación.",
+  "project3.date": "Enero 2024",
+  "project3.title": "Prueba técnica de Worköholics",
+  "project3.description": "Este proyecto consistió en reproducir una plantilla enviada por la empresa Worköholics. Esta prueba incluía una landing page a la que decidí introducir animaciones y usar buenas prácticas (como puede ser el uso de viewports en vez de píxeles para las imágenes o usar HTML semántico para una mejor comprensión del código). Gracias a este proyecto aprendí a usar nuevas tecnologías como Sass o Framer Motion.",
   "project2.date": "Noviembre 2023",
   "project2.title": "RowONE",
   "project2.description": "RowONE es una web de venta de tickets para conciertos traducida tanto a español como a inglés usando i18next como herramienta para el cambio de idioma. Esta página está creada usando React, NestJS y TailwindCSS. Además, incluye JWT para la validación de inicios de sesión (si no tienes una cuenta e inicias sesión, no te permite comprar entradas) y Resend para enviar las entradas al correo electrónico (aunque en su versión gratuita sólo permite incluir una única dirección de correo por lo que no es posible ejecutarlo desde otras cuentas). Finalmente, RowONE usa Stripe para simular una pasarela de pago previa al envío de las entradas y Swagger para poder obtener la documentación de la web y ejecutar diferentes acciones.",
-  "project3.date": "Octubre 2023",
-  "project3.title": "PlanCraft",
-  "project3.description": ""
+  "project1.date": "Octubre 2023",
+  "project1.title": "ChronosCraft",
+  "project1.description": "", 
+
+
+  "language.selection":"Idiomas", 
+  "footer.contact":"Contacto"
 }
