@@ -3,6 +3,7 @@ import University from "../components/icons/University.astro";
 import MasterIcon from "../components/icons/MasterIcon.astro";
 import Date from "../components/Date.astro";
 import Code from "../components/icons/Code.astro";
+import i18next, { t, changeLanguage } from "i18next";
 
 const { class: className, id, customComponent, children } = Astro.props;
 
@@ -14,7 +15,7 @@ const cardClass = `card flex w-full lg:card-side mb-4 mt-2 ${className}`;
     <Code />
   </figure>
   <div class="card-body ml-6">
-    <p>Bootcamp Full-Stack - Code4Jobs</p>
+    <p>{t("education.bootcamp")}</p>
   </div>
   <Date educationYear="2023" />
 </div>
@@ -25,8 +26,7 @@ const cardClass = `card flex w-full lg:card-side mb-4 mt-2 ${className}`;
   </figure>
   <div class="card-body ml-6">
     <p class="flex-wrap text-pretty">
-      Grado universitario en Lenguas Modernas con Mención en Estudios Ingleses -
-      Universidad de Deusto
+    {t("education.degree")}
       <Date educationYear="2016-2020" />
     </p>
   </div>
@@ -38,7 +38,7 @@ const cardClass = `card flex w-full lg:card-side mb-4 mt-2 ${className}`;
   </figure>
   <div class="card-body ml-6">
     <p class="flex-wrap text-pretty">
-      Máster universitario en Lingüística Inglesa Aplicada - UNED
+    {t("education.master")}
       <Date educationYear="2022-2024" />
     </p>
   </div>
