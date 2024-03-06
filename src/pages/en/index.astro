@@ -8,6 +8,7 @@ import SectionContainer from "../../components/SectionContainer.astro";
 // import { translations } from "../translations";
 import i18next, { t, changeLanguage } from "i18next";
 import EducationBooks from "../../components/icons/EducationBooks.astro";
+import DropdownNav from "../../components/DropdownNav.astro";
 
 changeLanguage("en");
 ---
@@ -21,7 +22,7 @@ changeLanguage("en");
      <PersonalInfo/>
     </SectionContainer>
 
-    <!-- <ImageCarrousel/> -->
+   <DropdownNav></DropdownNav>
 
     <SectionContainer id="projects">
       <h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
