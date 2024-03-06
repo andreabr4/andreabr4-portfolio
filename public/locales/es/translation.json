@@ -7,9 +7,16 @@
 
   "personal.name":"¡Hola, soy Andrea!",
   "personal.badge":"Disponible para trabajar",
-  "personal.description.colored":"Programadora junior, filóloga y lingüista inglesa. Me encanta el desarrollo Frontend y el Diseño UI/UX.",
+  "personal.description.colored":"Programadora junior, filóloga y lingüista de la lengua inglesa. Me encanta el desarrollo Frontend y el Diseño UI/UX.",
   "personal.description":"Creo proyectos multilingües para mejorar mis habilidades de programación ya que tengo gran curiosidad y ganas de aprender nuevas tecnologías. Vivo en Bilbao.",
  
+  "projects.title": "Últimos proyectos",
+  "projects.links":"Enlaces:",
+
+  "project5.date": "Actualmente", 
+  "project5.title": "Harveslit", 
+  "project5.description": "Harveslit es un proyecto con el que pretendo tener un espacio personal en el que poder compartir mis escritos y habilidades de redacción. Tengo mucha ilusión por construir Harveslit ya que siempre me ha gustado escribir pero lo he hecho de forma desordenada, en hojas que han terminado desapareciendo, y ahora tendré un lugar en el que plasmar mis ideas e historias. Es un desafío personal en el que pretendo no sólo descubrir nuevas tecnologías para seguir aprendiendo sino también que sirva como portfolio para puestos de copywriter o redactora.",
+
   "project4.date": "Febrero-Marzo 2024", 
   "project4.title": "Portfolio personal", 
   "project4.description": "En este portfolio, he incluido los proyectos más relevantes que he completado a día de hoy. Está construido usando Astro y será un proyecto en constante evolución ya que quiero continuar desarrollando nuevos desafíos para seguir aprendiendo y mejorando mis habilidades de programación.",
@@ -18,11 +25,15 @@
   "project3.description": "Este proyecto consistió en reproducir una plantilla enviada por la empresa Worköholics. Esta prueba incluía una landing page a la que decidí introducir animaciones y usar buenas prácticas (como puede ser el uso de viewports en vez de píxeles para las imágenes o usar HTML semántico para una mejor comprensión del código). Gracias a este proyecto aprendí a usar nuevas tecnologías como Sass o Framer Motion.",
   "project2.date": "Noviembre 2023",
   "project2.title": "RowONE",
-  "project2.description": "RowONE es una web de venta de tickets para conciertos traducida tanto a español como a inglés usando i18next como herramienta para el cambio de idioma. Esta página está creada usando React, NestJS y TailwindCSS. Además, incluye JWT para la validación de inicios de sesión (si no tienes una cuenta e inicias sesión, no te permite comprar entradas) y Resend para enviar las entradas al correo electrónico (aunque en su versión gratuita sólo permite incluir una única dirección de correo por lo que no es posible ejecutarlo desde otras cuentas). Finalmente, RowONE usa Stripe para simular una pasarela de pago previa al envío de las entradas y Swagger para poder obtener la documentación de la web y ejecutar diferentes acciones.",
+  "project2.description": "RowONE es una web de venta de tickets para conciertos traducida tanto a español como a inglés. Se centra en el género rock-metal aunque como futura mejora planteo añadir más géneros musicales con sus respectivos estilos visuales. Como aspecto a destacar y gracias a JWT, RowONE usa sólo te permite comprar entradas si tienes una cuenta y has iniciado sesión, aportando mayor seguridad al usuario al tener todas sus compras asociadas a su cuenta.",
   "project1.date": "Octubre 2023",
   "project1.title": "ChronosCraft",
-  "project1.description": "", 
+  "project1.description": "¿Cuántas veces has querido hacer algo diferente en tu tiempo libre pero no se te ocurre nada? ChronosCraft es un espacio en el que describir y guardar planes que veas atractivos para realizar solo o en compañía. Además, una vez realizado, puedes editarlo para valorar tu experiencia entre 1 a 5 estrellas y considerar si merece la pena repetirlo.", 
 
+  "education.title":"Educación",
+  "education.bootcamp":"Bootcamp Full-Stack - Code4Jobs",
+  "education.degree": "Grado universitario en Lenguas Modernas con Mención en Estudios Ingleses - Universidad de Deusto",
+  "education.master": "Máster universitario en Lingüística Inglesa Aplicada - UNED",
 
   "language.selection":"Idiomas", 
   "footer.contact":"Contacto"
