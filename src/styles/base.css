@@ -36,7 +36,7 @@
   }
   section,
   footer {
-    @apply mx-auto px-4;
+    @apply px-4;
   }
   a {
     @apply outline-2 outline-offset-1 outline-skin-fill 
