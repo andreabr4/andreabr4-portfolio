@@ -20,6 +20,19 @@ import JWTIcon from "./icons/JWTIcon.astro";
 import I18NextIcon from "./icons/I18NextIcon.astro";
 
 const projects = [
+{
+    date: t("project5.date"),
+    title: t("project5.title"),
+    description: t("project5.description"),
+    tags: [
+      {
+        icon: FigmaIcon,
+        class: "",
+        name: "Figma",
+      },
+    ],
+    image: "../../Harveslit-mockup2.jpg",
+  },
   {
     date: t("project4.date"),
     title: t("project4.title"),
@@ -167,7 +180,7 @@ const projects = [
       },
     ],
     link: "https://cool-klepon-45dc29.netlify.app/",
-    github: "",
+    github: "https://linktr.ee/andreabr4",
     image: "../../RowONE-mockup.jpg",
   },
   {
@@ -213,7 +226,7 @@ const projects = [
 ];
 ---
 
-<ol class="relative border-s border-gray-200 dark:border-gray-700 ml-3">
+<ol class="relative border-s border-gray-400 ml-3">
   {
     projects.map((project) => (
       <li class="mb-10 ms-4">

@@ -1,27 +1,21 @@
 ---
 import University from "../components/icons/University.astro";
+import MasterIcon from "../components/icons/MasterIcon.astro";
 import Date from "../components/Date.astro";
 import Code from "../components/icons/Code.astro";
+import i18next, { t, changeLanguage } from "i18next";
 
 const { class: className, id, customComponent, children } = Astro.props;
 
-const cardClass = `card flex w-full lg:card-side bg-base-100 custom-shadow shadow-xl mb-4 mt-2 ${className}`;
+const cardClass = `card flex w-full lg:card-side mb-4 mt-2 ${className}`;
 ---
-
-<!-- <style>
-  .custom-shadow {
-    box-shadow:
-      0 4px 6px -1px rgba(255, 255, 255, 0.5),
-      0 2px 4px -1px rgba(255, 255, 255, 0.25);
-  }
-</style> -->
 
 <div class={cardClass}>
   <figure class="size-12">
     <Code />
   </figure>
-  <div class="card-body ml-6 mt-2">
-    <p>Bootcamp Full-Stack - Code4Jobs</p>
+  <div class="card-body ml-6">
+    <p>{t("education.bootcamp")}</p>
   </div>
   <Date educationYear="2023" />
 </div>
@@ -31,12 +25,20 @@ const cardClass = `card flex w-full lg:card-side bg-base-100 custom-shadow shado
     <University />
   </figure>
   <div class="card-body ml-6">
-    <p class="flex-wrap text-pretty mb-5">
-      Grado universitario en Lenguas Modernas con Mención en Estudios Ingleses - Universidad de Deusto
+    <p class="flex-wrap text-pretty">
+    {t("education.degree")}
       <Date educationYear="2016-2020" />
     </p>
+  </div>
+</div>
+
+<div class=`mt-6 ${cardClass}`>
+  <figure class="size-12 flex-shrink-0">
+    <MasterIcon />
+  </figure>
+  <div class="card-body ml-6">
     <p class="flex-wrap text-pretty">
-      Máster universitario en Lingüística Inglesa Aplicada - UNED
+    {t("education.master")}
       <Date educationYear="2022-2024" />
     </p>
   </div>

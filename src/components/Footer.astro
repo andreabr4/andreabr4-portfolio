@@ -3,14 +3,14 @@ import LanguageSelection from "../components/LanguageSelection.astro";
 import i18next, { t } from "i18next";
 ---
 
-<footer class="dark:bg-[#474555] w-screen">
+<footer class="w-screen border-t border-gray-300 dark:border-gray-700">
   <div class="p-4 py-6 lg:py-8">
     <div class="lg:flex lg:justify-between">
       <div
         class="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-6 col-span-2 w-full"
       >
         <div class="md:ml-8">
-          <h2 class="mb-6 text-sm font-semibold uppercase text-white">
+          <h2 class="mb-6 text-sm font-semibold uppercase">
             {t("language.selection")}
           </h2>
           <ul class="text-gray-400 font-medium">
@@ -21,7 +21,7 @@ import i18next, { t } from "i18next";
         </div>
 
         <div class="md:mx-auto">
-          <h2 class="mb-6 text-sm font-semibold uppercase text-white">
+          <h2 class="mb-6 text-sm font-semibold uppercase">
             {t("footer.contact")}
           </h2>
           <ul class="text-gray-400 font-medium">
@@ -43,8 +43,8 @@ import i18next, { t } from "i18next";
       </div>
     </div>
 
-    <hr
+    <!-- <hr
       class="flex justify-center my-6 border-gray-200 dark:border-gray-700 lg:my-8 w-full"
-    />
+    /> -->
   </div>
 </footer>
