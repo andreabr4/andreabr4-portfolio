@@ -2,13 +2,13 @@
 import Layout from "../../layouts/Layout.astro";
 import PersonalInfo from "../../components/PersonalInfo.astro";
 import Laptop from "../../components/icons/Laptop.astro";
+import SkillsIcon from "../../components/icons/SkillsIcon.astro";
 import Projects from "../../components/Projects.astro";
 import EducationSection from "../../components/EducationSection.astro";
 import SectionContainer from "../../components/SectionContainer.astro";
-// import { translations } from "../translations";
+import Skills from "../../components/Skills.astro";
 import i18next, { t, changeLanguage } from "i18next";
 import EducationBooks from "../../components/icons/EducationBooks.astro";
-import DropdownNav from "../../components/DropdownNav.astro";
 
 changeLanguage("en");
 ---
@@ -22,8 +22,14 @@ changeLanguage("en");
      <PersonalInfo/>
     </SectionContainer>
 
-   <DropdownNav></DropdownNav>
-
+    <SectionContainer id="skills">
+      <h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
+        <SkillsIcon class="size-8" />
+        Skills
+      </h2>
+      <Skills/>
+    </SectionContainer>
+   
     <SectionContainer id="projects">
       <h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
         <Laptop class="size-8" />
