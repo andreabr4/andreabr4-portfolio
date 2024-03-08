@@ -7,9 +7,9 @@ import Mail from "../components/icons/Mail.astro";
 import CV from "../components/icons/CV.astro";
 import i18next, { t } from "i18next";
 ---
-
+<div class="card md:py-5 py-10 px-10 md:h-[40rem] md:w-[50rem] bg-base-100 shadow-xl mt-[-15vh]">
 <img
-  class="rounded-full size-48 mb-4 shadow-md shadow-white/10"
+  class="rounded-full size-48 mb-[8vh] shadow-md shadow-white/10"
   src="../../profile-image.jpg"
   alt="profile photo"
 />
@@ -28,7 +28,7 @@ import i18next, { t } from "i18next";
 </h1>
 <h2 class="text-xl lg:text-2xl text-wrap max-w-[700px]">
   <span class="text-blue-500"> {t("personal.description.colored")}</span><span
-    class="text-white-100/90"
+    class="text-white-100/90 text-pretty"
   >
     {t("personal.description")}</span
   >
@@ -55,3 +55,4 @@ import i18next, { t } from "i18next";
     CV
   </SocialInfo>
 </nav>
+</div>
