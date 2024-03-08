@@ -2,12 +2,15 @@
 import DesignIcon from "./icons/DesignIcon.astro";
 import FramerIcon from "./icons/FramerIcon.astro";
 import FigmaIcon from "./icons/FigmaIcon.astro";
+import SassIcon from "./icons/SassIcon.astro";
+import TailwindCSSIcon from "./icons/TailwindCSSIcon.astro";
+import BootstrapIcon from "./icons/BootstrapIcon.astro";
 import i18next, { t } from "i18next";
 ---
 
 <div class="border-b border-gray-200/70 mt-5">
   <div class="flex items-center">
-   <DesignIcon/>
+    <DesignIcon />
     <h2 class="text-sm font-semibold uppercase ml-4">{t("design.title")}</h2>
   </div>
 
@@ -16,11 +19,23 @@ import i18next, { t } from "i18next";
   >
     <li>
       <FigmaIcon />
-      <p class="text-sm">Nest</p>
+      <p class="text-sm">Figma</p>
     </li>
     <li>
-        <FramerIcon />
-        <p class="text-sm">Framer Motion</p>
-      </li>
+      <FramerIcon />
+      <p class="text-sm">Framer Motion</p>
+    </li>
+    <li>
+      <SassIcon />
+      <p class="text-sm">Sass</p>
+    </li>
+    <li>
+      <BootstrapIcon />
+      <p class="text-sm">Bootstrap</p>
+    </li>
+    <li>
+      <TailwindCSSIcon />
+      <p class="text-sm">TailwindCSS</p>
+    </li>
   </ul>
 </div>
