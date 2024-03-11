@@ -5,37 +5,37 @@ import LinkedIn from "../components/icons/LinkedIn.astro";
 import GitHub from "../components/icons/GitHub.astro";
 import Mail from "../components/icons/Mail.astro";
 import CV from "../components/icons/CV.astro";
+import i18next, { t } from "i18next";
 ---
-
+<!-- <div class="card md:py-5 py-10 px-10 md:h-[40rem] md:w-[50rem] bg-base-100 shadow-xl mt-[-15vh] "> -->
+  <div class="mt-[-15vh]">
 <img
-  class="rounded-full size-20 mb-4"
+  class="rounded-full size-48 mb-[8vh] shadow-lg shadow-orange"
   src="../../profile-image.jpg"
   alt="profile photo"
 />
 <h1
   class="text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-4 lg:pb-10"
 >
-  Hey, I'm Andrea
+  {t("personal.name")}
   <a
     href="https://www.linkedin.com/in/andreabr4/"
     target="_blank"
     rel="noopener"
     class="flex justify-center items-center"
   >
-    <Badge>Available for hire</Badge>
+    <Badge>{t("personal.badge")}</Badge>
   </a>
 </h1>
 <h2 class="text-xl lg:text-2xl text-wrap max-w-[700px]">
-  <span class="text-blue-200"
-    >Junior Web Developer and English philologist and linguist. I live in Bilbao
-    (Spain).</span
-  ><span class="text-white-100/90">
-    I create different projects in multilingual settings to improve my
-    programming skills since I am willing to start working in this field.</span
+  <span class="text-[#f20548]"> {t("personal.description.colored")}</span><span
+    class="text-white-100/90 text-pretty"
+  >
+    {t("personal.description")}</span
   >
 </h2>
 
-<nav class="flex gap-4 mt-8 flex-wrap">
+<nav class="flex gap-4 mt-8 mb-[-3vh] flex-wrap">
   <SocialInfo href="https://www.linkedin.com/in/andreabr4/">
     <LinkedIn class="size-4 md:size-6" />
     LinkedIn
@@ -56,3 +56,6 @@ import CV from "../components/icons/CV.astro";
     CV
   </SocialInfo>
 </nav>
+</div>
+
+<!-- <div class="absolute inset-0 -z-10 h-full w-full bg-white bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:6rem_4rem]"><div class="absolute bottom-0 left-0 right-0 top-0 bg-[radial-gradient(circle_800px_at_100%_200px,#d5c5ff,transparent)]"></div></div> -->

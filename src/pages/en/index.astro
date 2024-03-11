@@ -2,11 +2,11 @@
 import Layout from "../../layouts/Layout.astro";
 import PersonalInfo from "../../components/PersonalInfo.astro";
 import Laptop from "../../components/icons/Laptop.astro";
+import SkillsIcon from "../../components/icons/SkillsIcon.astro";
 import Projects from "../../components/Projects.astro";
-import ImageCarrousel from "../../components/ImageCarrousel.astro";
 import EducationSection from "../../components/EducationSection.astro";
 import SectionContainer from "../../components/SectionContainer.astro";
-// import { translations } from "../translations";
+import Skills from "../../components/Skills.astro";
 import i18next, { t, changeLanguage } from "i18next";
 import EducationBooks from "../../components/icons/EducationBooks.astro";
 
@@ -22,20 +22,26 @@ changeLanguage("en");
      <PersonalInfo/>
     </SectionContainer>
 
-    <!-- <ImageCarrousel/> -->
-
+    <SectionContainer id="skills">
+      <h2 class="text-3xl text-[#f20548] font-semibold mb-6 flex gap-x-3 items-center">
+        <SkillsIcon class="size-8" />
+        Skills
+      </h2>
+      <Skills/>
+    </SectionContainer>
+   
     <SectionContainer id="projects">
-      <h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
+      <h2 class="text-3xl text-[#f20548] font-semibold mb-6 flex gap-x-3 items-center">
         <Laptop class="size-8" />
-        Latest projects
+        {t("projects.title")}
       </h2>
       <Projects />
     </SectionContainer>
 
     <SectionContainer id="education">
-      <h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
+      <h2 class="text-3xl text-[#f20548] font-semibold mb-6 flex gap-x-3 items-center">
         <EducationBooks class="size-8" />
-        Education
+        {t("education.title")}
       </h2>
       <EducationSection />
     </SectionContainer>

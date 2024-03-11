@@ -1,0 +1,47 @@
+---
+import FrontendIcon from "../components/icons/FrontendIcon.astro";
+import AstroIcon from "./icons/AstroIcon.astro";
+import CSSIcon from "./icons/CSSIcon.astro";
+import HTMLIcon from "./icons/HTMLIcon.astro";
+
+import ReactIcon from "./icons/ReactIcon.astro";
+import LighthouseIcon from "./icons/LighthouseIcon.astro";
+
+
+---
+<div class="border-b border-gray-600 mt-5">
+    <div class="flex items-center">
+      <FrontendIcon />
+      <h2 class="text-sm font-semibold uppercase ml-4">Front-end</h2>
+    </div>
+
+    <ul
+      class="mt-[2rem] flex flex-wrap md:flex-nowrap gap-x-6 md:gap-x-3 gap-y-4 md:space-x-5 max-w-[700px] mb-5"
+    >
+      <li>
+        <AstroIcon />
+        <p class="text-sm">Astro</p>
+      </li>
+
+      <li>
+        <ReactIcon />
+        <p class="text-sm">React</p>
+      </li>
+
+      <li>
+        <CSSIcon />
+        <p class="text-sm">CSS</p>
+      </li>
+
+      <li>
+        <HTMLIcon />
+        <p class="text-sm">HTML</p>
+      </li>
+      <li>
+        <LighthouseIcon/>
+        <p class="text-sm">Lighthouse</p>
+      </li>
+      
+      
+    </ul>
+  </div>
