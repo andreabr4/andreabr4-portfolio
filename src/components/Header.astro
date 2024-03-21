@@ -21,19 +21,26 @@ var LightAndDarkMode = true;
   }
 
   #hamitems a,
-  #hamitems button,
   #hamitems span {
-    padding: 5px;
+    padding: 0.5rem;
+    width: 100%;
     text-decoration: none;
     text-align: center;
     flex-grow: 1;
     flex-basis: 0;
   }
 
-  #hamitems a:hover {
-    color: #f20548; 
+  #hamitems button {
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    flex-grow: 0.7;
+    flex-basis: 0;
   }
 
+  #hamitems a:hover {
+    color: #f20548;
+  }
 
   #hamitems svg {
     margin-left: 48%;
@@ -44,15 +51,18 @@ var LightAndDarkMode = true;
       display: block;
     }
     #hamitems svg {
-      margin-left: 48%;
+      margin-left: 47%;
     }
 
     #hamitems a,
     #hamitems button,
     #hamitems span {
       display: block;
-      width: 100%;
       box-sizing: border-box;
+    }
+
+    #hamitems button{
+      margin-top: 0.7rem;
     }
 
     #hamnav label {
@@ -74,7 +84,6 @@ var LightAndDarkMode = true;
 <header
   class="flex justify-center items-center py-5 w-full xl:w-[1000px] mx-auto border-b border-gray-700"
 >
- 
   <nav id="hamnav">
     <label for="hamburger">&#9776;</label>
     <input type="checkbox" id="hamburger" />
@@ -86,7 +95,7 @@ var LightAndDarkMode = true;
       <a href="#education">{t("nav.education")}</a>
       <a href="#contact">{t("nav.contact")}</a>
 
-      <span class="md:mr-[-3vw]">
+      <span>
         <DarkBadge>
           <LanguageSelector
             showFlag={false}
@@ -117,4 +126,3 @@ var LightAndDarkMode = true;
     </div>
   </nav>
 </header>
-
